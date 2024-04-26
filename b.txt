@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Read More Buttons</title>
+  <style>
+    .moreContent {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<p>This is the first paragraph. It contains some content. <span class="moreContent">This is additional content that is hidden by default.</span></p>
+<button onclick="toggleContent(1)">Read More</button>
+
+<p>This is the second paragraph. It also contains some content. <span class="moreContent">This is additional content that is hidden by default.</span></p>
+<button onclick="toggleContent(2)">Read More</button>
+
+<p>This is the third paragraph. It contains more content. <span class="moreContent">This is additional content that is hidden by default.</span></p>
+<button onclick="toggleContent(3)">Read More</button>
+
+<p>This is the fourth paragraph. It contains additional content as well. <span class="moreContent">This is additional content that is hidden by default.</span></p>
+<button onclick="toggleContent(4)">Read More</button>
+
+<script>
+  // Function to toggle content
+  function toggleContent(index) {
+    var moreText = document.querySelectorAll(".moreContent")[index - 1];
+    var btnText = document.querySelectorAll("button")[index - 1];
+
+    if (moreText.style.display === "none" || moreText.style.display === "") {
+      moreText.style.display = "inline";
+      btnText.textContent = "Read Less";
+    } else {
+      moreText.style.display = "none";
+      btnText.textContent = "Read More";
+    }
+  }
+
+  // Event listener to toggle content when anywhere on the screen is touched
+  document.addEventListener("click", function(event) {
+    var target = event.target;
+    var buttons = document.querySelectorAll("button");
+
+    // Check if the click is not on any button
+    if (!Array.from(buttons).includes(target)) {
+      var moreTexts = document.querySelectorAll(".moreContent");
+      for (var i = 0; i < moreTexts.length; i++) {
+        moreTexts[i].style.display = "none";
+        buttons[i].textContent = "Read More";
+      }
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=1024">
+
   <title>Portfolio</title>
   <link href="style.css" rel="stylesheet"
 type="text/css" />
@@ -17,10 +18,11 @@ type="text/css" />
 
     <nav class="navbar">
       <a href="#" style="--i:1" class="active"> HOME </a>
-      <a href="#" style="--i:2"> ABOUT </a>
-      <a href="#" style="--i:3"> SKILL </a>
+      <a href="#about0" style="--i:2" > ABOUT </a>
+      <a href="#services0" style="--i:5"> SERVICES </a>
+      <a href="#skills0" style="--i:3"> SKILL </a>
       <a href="#" style="--i:4"> PORTFOLIO </a>
-      <a href="#" style="--i:5"> CONTACT </a>
+      <a href="#contact0" style="--i:5"> CONTACT </a>
     </nav>
   </header>
   <section class="home">
@@ -28,19 +30,22 @@ type="text/css" />
       <h3> Haloo, It's Me </h3>
       <h1>Varun Atri </h1>
       <h3> And I'm a <span class="text"></span></h3>
-      <p>
-         I am a programmer and a web developer. <br>I am a student of class 11th. I am a student of class 11th. 
-      </p>
+      <p> Currently studying in  Programming and Computer languages. I have a passion for coding and learning about technology.</p>
+
+      
       <div class="home-sci">
 
-<a href="https://www.facebook.com/varun.atri.520?mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook'></i></a>
+<a href="https://www.facebook.com/varun.atri.520?mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook-circle' style='color:#3b5998'  ></i></a>
 
-        <a href="https://www.instagram.com/varunatri_?igsh=MXR6cWdteTE1czRvcg==" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.instagram.com/varunatri_?igsh=MXR6cWdteTE1czRvcg==" target="_blank"><i class='bx bxl-instagram' style='color:#e91e0c'  ></i></a>
 
-        <a href="https://api.whatsapp.com/send?phone=+91 9419725331" target="_blank"><i class='bx bxl-whatsapp-square'></i></a>
+        <a href="https://api.whatsapp.com/send?phone=+91 9419725331" target="_blank"><i class='bx bxl-whatsapp-square' style='color:#25D366'  ></i></a>
+
+        <a href="https://www.snapchat.com/add/mr_varunattri?share_id=_bR0wTiXkI8&locale=en-GB" target="_blank"><i class='bx bxl-snapchat' style='color:#d3ec16'  ></i></a>
+        
 
 </div>
-      <a href="#" class="btn-box"> MORE ABOUT ME </a>
+      <a href="#" class="btn-box"> CONTACT </a>
 
      </div>
   </div>
@@ -48,16 +53,168 @@ type="text/css" />
   </div>
   <span class="home-imgHover"></span>
   </section>
+  <a id="about0"></a>
   <section class="about" id="about">
     <div class="about-img">
-      
+    
     </div>
     <div class="about-text">
       <h2> About <span> Me </span> </h2>
       <h4> Student </h4>
-      <p> I am a student of class 11th. <br />I am a student of class 11th.<br /> I am a student of class 11th.<br /> I am a student of class 11th. <br />I am a student of class 11
-      <a href="#" class="btn-box">  More ABOUT ME</a></p><br /><br /><br /><br />
+      <p>  I completed my 10th grade in 2021, And completed my ADCA computer course in 2023 I am learning about cyber security and computer languages.
+      <a href="#" class="btn-box">  More ABOUT ME</a></p>
+    </div>
+  </section>
+    <section><a id="services0"></a>
+      <div class="services" id="services">
+         <div class="container0">
+           <h1 class="sub-title">
+              My<span> Services</span>
+           </h1>
+           <div class="services-list">
+              <div>
+                 <i class='bx bx-network-chart' style='color:#00eeff'  ></i>
+                  <h2>Services</h2>
+                  <p> 
+                  * Web Designer<br />
+                  * Creator<br />
+                  * Video Editor<br />
+                  * Thumbnail Editor <br />
+                   </p>
+                 
+              </div>
+             <div>
+
+               <i class='bx bx-desktop' style='color:#00eeff'></i>
+                 <h2>Web Design</h2>
+                 <p> A web designer is a skilled professional who combines artistic <span class="moreContent">vision and technical expertise to create visually appealing and user-friendly websites. They bring ideas to life on the internet!😊</span></p>
+               <button onclick="toggleContent(1)">Read More</button>
+               
+             </div>
+             <div>
+               <i class='bx bxl-creative-commons'style='color:#00eeff'  ></i>
+                 <h2>Creator</h2>
+                 <p> A creator is someone who expresses their unique ideas and talents <span class="moreContent">through various forms of content like videos, photos, and more. It's all about unleashing your creativity!</span></p>
+               <button onclick="toggleContent(2)">Read More</button>
+                
+             </div>
+
+              <div>
+                 <i class='bx bx-video' style='color:#00eeff'  ></i>
+                   <h2>Video Editor</h2>
+                   <p>  Video editing is the art of assembling and enhancing video footage <span class="moreContent">to create a polished and professional final product. It involves adding effects, transitions, and music to make your videos shine.</span></p>
+                <button onclick="toggleContent(3)">Read More</button>
+                  
+               </div>
+             <div>
+                <i class='bx bx-desktop' style='color:#00eeff'  ></i>
+                  <h2>Thumbnail Editor</h2>
+                  <p> Thumbnail editing is all about creating eye-catching and compelling images <span class="moreContent">that grab viewers' attention. It helps to attract more clicks and engagement for your content.</span></p>
+               <button onclick="toggleContent(4)">Read More</button>
+                 
+              </div>
+
+
+           </div>
+
+
+         </div>
+
+      </div>
+
+    </section>
+
+<section><a id="skills0"></a>
+ 
+    <div class="container">
+      <h1 class="sub-title0">
+              My<span> Skills</span>
+      </h1>
+        <h1>Technical Skills </h1>
+        <div class="skill">
+          <i class='bx bxl-html5' style='color:#d0820a'  ></i>
+            <h3>HTML</h3>
+            <h4>95%</h4>
+            <span class="skill-bar"></span>
+            <span class="fill-bar html"></span>
+        </div>
+        <div class="skill">
+
+<i class='bx bxl-css3' style='color:#32f88d'  ></i>
+            <h3>CSS</h3>
+            <h4>80%</h4>
+            <span class="skill-bar"></span>
+            <span class="fill-bar css"></span>
+        </div>
+        <div class="skill">
+          <i class='bx bxl-javascript' style='color:#429769'  ></i>
+            <h3>JavaScript</h3>
+            <h4>60%</h4>
+            <span class="skill-bar"></span>
+            <span class="fill-bar javascript"></span>
+        </div>
+        <div class="skill">
+          <i class='bx bxl-python' style='color:#d0820a'  ></i>
+            <h3>PYTHON</h3>
+            <h4>75%</h4>
+            <span class="skill-bar"></span>
+            <span class="fill-bar python"></span>
+        </div>
+        <div class="skill">
+          <i class='bx bxs-copyright' style='color:#00eeff'  ></i>
+            <h3>C++</h3>
+            <h4>80%</h4>
+            <span class="skill-bar"></span>
+            <span class="fill-bar c"></span>
+        </div>
+      
+        <div class="skill">
+          <i class='bx bx-laptop' style='color:#00eeff'></i>
+            <h3>System Handling</h3>
+            <h4>90%</h4>
+            <span class="skill-bar"></span>
+            <span class="fill-bar systemhandling"></span>
+        </div>
+      <div class="skill">
+        <i class='bx bx-video' style='color:#00eeff'  ></i>
+            <h3>Video Editor</h3>
+            <h4>55%</h4>
+            <span class="skill-bar"></span>
+            <span class="fill-bar videoediting"></span>
+      </div>
+    </div>
+    </section>
+  <div>
+   <section class="contact" id="contact"><a id="contact0"></a>
+     <div class="contact-text">
+        <h2>
+Contact <span>Me</span>
+</h2>
+
        
+       <div class="contact-icons">
+
+
+         
+         <a href="https://www.facebook.com/varun.atri.520?mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook-circle' style='color:#3b5998'  ></i></a>
+
+         
+         
+         <a href="mailto:varunatri786@gmail.com" target="_blank"><i class='bx bx-mail-send' style='color:#da1b1b'  ></i></a>
+
+
+         <a href="https://www.instagram.com/varunatri_?igsh=MXR6cWdteTE1czRvcg==" target="_blank"><i class='bx bxl-instagram' style='color:#e91e0c'   ></i></a>
+
+         <a href="https://api.whatsapp.com/send?phone=+91 9419725331" target="_blank"><i class='bx bxl-whatsapp-square' style='color:#25D366'  ></i></a>
+
+         <a href="https://www.snapchat.com/add/mr_varunattri?share_id=_bR0wTiXkI8&locale=en-GB" target="_blank"><i class='bx bxl-snapchat' style='color:#d3ec16'  ></i></a>
+       </div>
+     </div>
+     <marquee behavior="scroll" direction="right">
+<p class="btn-box2"> Thankuu for Coming 😊</p></marquee>
+   </section>
+</div>
+
   <script src="script.js"></script>
 </body>
 
