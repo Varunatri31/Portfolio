@@ -489,6 +489,102 @@ body
 }
 
 
+#hobbies{
+  background-color: #112233;
+  color: aliceblue;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 4rem;
+   
+}
+.sub-title{
+  text-decoration: underline;
+  
+  text-align: center;
+  font-size: 90px;
+  padding-bottom: 70px;
+ 
+}
+.sub-title span{
+  color: #0ef;
+}
+.container01{
+  padding: 90px;
+}
+.hobbies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.hobbies-list div{
+  background-color: transparent;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 13px;
+  border-right: 10px;
+  border-radius: 20px;
+  transition: background 0.5s, transform 0.5s;
+  box-shadow: 1px 1px 20px #0ef,
+              1px 1px 40px #0053;
+  
+}
+.hobbies-list div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+  
+}
+.hobbies-list div h2{
+  text-decoration: underline;
+  color: #0ef;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.hobbies-list div h6{
+  text-decoration: underline;
+  color: #0ef;
+  font-size: 10px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.hobbbies-list div a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.btn-box5 {
+
+  display: inline-block;
+  padding: 12px 28px; 
+  background:#0ef; 
+  border-radius: 40px; 
+  font-size: 20px;
+  color: #081b29;
+  letter-spacing: 1px; 
+  text-decoration: underline ; 
+  font-weight: 600;
+  opacity:1;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 2s;
+  box-shadow: 0 0 5px #0ef,
+  0 0 25px #0ef;
+  
+
+
+
+}
+
+.btn-box5:hover {
+  box-shadow: 0 0 5px cyan,
+  0 0 25px cyan, 0 0 50px cyan,
+  0 0 100px cyan, 0 0 200px cyan,
+}
+
+
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -537,10 +633,10 @@ body
   padding: 12px 28px; 
   background:#0ef; 
   border-radius: 40px; 
-  font-size: 16px;
+  font-size: 25px;
   color: #081b29;
   letter-spacing: 1px; 
-  text-decoration: none; 
+  text-decoration: underline; 
   font-weight: 600;
   opacity: 0;
   animation: slideTop 1s ease forwards;
@@ -568,7 +664,7 @@ button{
   padding: 12px 28px; 
   background:#0ef; 
   border-radius: 40px; 
-  font-size: 16px;
+  font-size: 25px;
   color: #081b29;
   letter-spacing: 1px; 
   text-decoration: none; 
